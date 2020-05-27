@@ -52,8 +52,8 @@ public class PersonGenerator {
 
 	private LocalDate generateBirthDate(int year){
 		return Year.isLeap(year) ?
-				LocalDate.ofYearDay(year, RandomNumberGenerator.getInstance().getRandomInt(1,366)) :
-				LocalDate.ofYearDay(year, RandomNumberGenerator.getInstance().getRandomInt(1,365));
+				LocalDate.ofYearDay(year, RandomNumberGenerator.getInstance().getRandomInt(1,366)) : // then 366 is not included, right?
+				LocalDate.ofYearDay(year, RandomNumberGenerator.getInstance().getRandomInt(1,365)); // should it be (1,366)?
 	}
 	
 	private Gender getRandomGender() {

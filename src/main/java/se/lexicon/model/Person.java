@@ -1,6 +1,7 @@
 package se.lexicon.model;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Person {

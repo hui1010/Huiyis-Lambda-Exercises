@@ -20,7 +20,7 @@ public class RandomNumberGenerator {
 	
 	public int getRandomInt(int min, int max) {
 		return rng.nextInt((max-min) + 1) + min;
-	}
+	} // why write like that, is it same as max+1 ?
 	
 	public boolean getRandomBoolean() {
 		return rng.nextBoolean();
